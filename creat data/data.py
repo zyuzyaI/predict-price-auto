@@ -16,6 +16,7 @@ class RiaSpider(scrapy.Spider):
 		body = response.css('.paid')
 		for item in body:
 			items['title'] = item.css('.blue.bold::text').extract()[0]
+			items['year'] = item.css('.address::text').extract()[1].strip()
 			try:
 				items['price$'] = item.css('.size22::text').extract()[0]
 			except:
