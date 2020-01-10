@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+
+<form class="form">
+	<h2>Year</h2>
+    <input class="area"  type="float" id="uiYear" class="floatLabel" name="Year" value="2010">
+    <h2>Mileage</h2>
+    <input class="area"  type="float" id="uiMileage" class="floatLabel" name="Mileage"  value="117">
+    <h2>Power</h2>
+    <input class="area"  type="float" id="uiPower" class="floatLabel" name="Power" value="1.2">
+	</form>
+<form class="form">
+	<h2>Brand</h2>
+	<div>
+  <select class="location" name="" id="uiBrand">
+    <option value="" disabled="disabled" selected="selected">Choose a Brand</option>
+  </select>
+</div>
+<h2>Model</h2>
+<div>
+<select class="location" name="" id="uiModel">
+<option value="" disabled="disabled" selected="selected">Choose a Model</option>
+</select>
+</div>
+<h2>Body</h2>
+	<div>
+  <select class="location" name="" id="uiBody">
+    <option value="" disabled="disabled" selected="selected">Choose a Body</option>
+  </select>
+</div>
+<h2>Fuel</h2>
+	<div>
+  <select class="location" name="" id="uiFuel">
+    <option value="" disabled="disabled" selected="selected">Choose a Fuel</option>
+  </select>
+</div>
+<h2>Transmission</h2>
+	<div>
+  <select class="location" name="" id="uiTransmission">
+    <option value="" disabled="disabled" selected="selected">Choose a Transmission</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
